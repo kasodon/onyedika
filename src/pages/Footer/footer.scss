@@ -456,10 +456,12 @@ footer {
              @media (min-width: 480px) and (max-width: 759px) {
                 font-size: .9rem;
                 text-align: center;
+                padding: .9rem .3rem;
             }
             @media (max-width: 479px) {
                 font-size: .9rem;
                 text-align: center;
+                padding: .7rem .2rem;
             }
             span {
                 animation: heartBeat 2.5s infinite;
