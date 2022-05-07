@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect, useState} from 'react';
+import './App.scss';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import indexRoutes from './routes/index'
+import Preloader from './components/preloader';
 
 function App() {
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        setLoading(true);
+        setTimeout(() => {setLoading(false);}, 5000);
+      }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>
+      { loading ? 
+        (<Preloader />) 
+        : 
+        (
+            <Router>
+            <Routes>
+                {indexRoutes.map((prop, key) => {
+                    return (
+                        <Route
+                            path={prop.path}
+                            key={key}
+                            element={prop.component}
+                        ></Route>
+                    )
+                })}
+            </Routes>
+        </Router>
+        ) 
+    }
+      </>
   );
 }
 
