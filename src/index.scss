@@ -113,3 +113,36 @@ body {
   border-radius: 20px;
   border: 2px solid #fdfdfd;
 }
+
+.css-eglki6-MuiLinearProgress-root {
+  height: 20px !important;
+  background-color: #e8fdee !important;
+  border-radius: 5px !important;
+  @media (min-width: 480px) and (max-width: 759px) {
+      height: 14px !important;
+  }
+  @media (max-width: 479px) {
+      height: 12px !important;
+  }
+}
+
+.css-5xe99f-MuiLinearProgress-bar1 {
+  background-color: #14e956 !important;
+}
+
+.css-1kjyx0o-MuiTypography-root {
+  margin-top: 2rem !important;
+  // font-family: "Cyborg" !important;
+  font-family: "ExoSpace" !important;
+  font-weight: 900 !important;
+  font-size: 3rem !important;
+  line-height: 1.43;
+  @media (min-width: 480px) and (max-width: 759px) {
+      font-size: 2.5rem !important;
+      line-height: 1.15 !important;
+  }
+  @media (max-width: 479px) {
+      font-size: 2rem !important;
+      line-height: 1 !important;
+  }
+}
