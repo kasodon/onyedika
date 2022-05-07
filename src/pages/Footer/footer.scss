@@ -403,7 +403,7 @@ footer {
                         font-size: 1.7rem;
                      }
                      @media (max-width: 479px) {
-                        font-size: 1.7rem;
+                        font-size: 1.5rem;
                     }
                 }
                 .mail {
@@ -424,8 +424,8 @@ footer {
                         width: 38px;
                     }
                     @media (max-width: 479px) {
-                        height: 38px;
-                        width: 38px;
+                        height: 32px;
+                        width: 32px;
                     }
                 }
             }
@@ -455,9 +455,11 @@ footer {
              }
              @media (min-width: 480px) and (max-width: 759px) {
                 font-size: .9rem;
+                text-align: center;
             }
             @media (max-width: 479px) {
                 font-size: .9rem;
+                text-align: center;
             }
             span {
                 animation: heartBeat 2.5s infinite;
