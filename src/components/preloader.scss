@@ -30,14 +30,14 @@
         }
     }
     .loader {
-        width: 80vw;
+        width: 80vw !important;
     }
     .progress {
-        width: 80vw;
-        color: #14e956;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 80vw !important;
+        color: #14e956 !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
     }
 }
 
@@ -67,10 +67,10 @@
     line-height: 1.43;
     @media (min-width: 480px) and (max-width: 759px) {
         font-size: 2.5rem !important;
-        line-height: 1.15;
+        line-height: 1.15 !important;
     }
     @media (max-width: 479px) {
         font-size: 2rem !important;
-        line-height: 1;
+        line-height: 1 !important;
     }
 }
