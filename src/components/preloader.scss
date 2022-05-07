@@ -74,3 +74,36 @@
         line-height: 1 !important;
     }
 }
+
+.css-7p5u54 {
+    height: 20px !important;
+    background-color: #e8fdee !important;
+    border-radius: 5px !important;
+    @media (min-width: 480px) and (max-width: 759px) {
+        height: 14px !important;
+    }
+    @media (max-width: 479px) {
+        height: 12px !important;
+    }
+}
+
+.css-t752vm {
+    background-color: #14e956 !important;
+}
+
+.css-16e5s8c {
+    margin-top: 2rem !important;
+    // font-family: "Cyborg" !important;
+    font-family: "ExoSpace" !important;
+    font-weight: 900 !important;
+    font-size: 3rem !important;
+    line-height: 1.43;
+    @media (min-width: 480px) and (max-width: 759px) {
+        font-size: 2.5rem !important;
+        line-height: 1.15 !important;
+    }
+    @media (max-width: 479px) {
+        font-size: 2rem !important;
+        line-height: 1 !important;
+    }
+}
