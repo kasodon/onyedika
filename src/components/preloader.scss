@@ -5,6 +5,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(#050810, 0.7),
+        rgba(#050810, 0.7)),
+    url('../assets/images/spaceX.png');
+    background-size: cover;
+    background-position: left top;
     // padding: 0 2rem;
     .log {
         margin-bottom: 7rem;
