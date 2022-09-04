@@ -11,9 +11,9 @@ function Header() {
     const navigate = useNavigate();
     const el = useRef();
     const elSocials = useRef();
-    const q = gsap.utils.selector(el);
+    // const q = gsap.utils.selector(el);
     const s = gsap.utils.selector(elSocials);
-    const tl = useRef();
+    // const tl = useRef();
     const tlMenu = useRef();
     const [checked, setChecked] = useState(false);
 
@@ -66,15 +66,15 @@ function Header() {
         return checked = !checked
     }
 
-    useEffect(() => {
-        tl.current = gsap.timeline()
-      .to(q(".square"), {
-        y: -15
-      })
-      .to(q(".square"), {
-        duration: 1.5, ease: "bounce.out", y: 6, repeat: -1, yoyo: true
-      });
-      }, []);
+    // useEffect(() => {
+    //     tl.current = gsap.timeline()
+    //   .to(q(".square"), {
+    //     y: -15
+    //   })
+    //   .to(q(".square"), {
+    //     duration: 1.5, ease: "bounce.out", y: 6, repeat: -1, yoyo: true
+    //   });
+    //   }, []);
 
       const nav = () => {
         return navigate('/'), window.location.reload();

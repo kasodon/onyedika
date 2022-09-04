@@ -11,7 +11,7 @@ export const ProjectData = [
         description: "Know legal requirements and dates the company must keep to avoid legal santions after a company is incorporated",
         img: "https://ik.imagekit.io/onyedika/slide/calender_S6GI-SE7_.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651255256123",
         stack: "Angular",
-        link: "https://company-calender.netlify.app/"
+        link: "https://company-calender-front.vercel.app/"
     },
     {
         title: "React Movie",

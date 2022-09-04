@@ -57,12 +57,12 @@ function Home() {
     const tlm = useRef();
     const dlm = useRef();
 
-    useEffect(() => {
-        dlm.current = gsap.timeline()
-        .fromTo(i(".c-tween"), {scale: 0.7}, {
-            scale: 1, repeat: -1, yoyo: true,
-          })
-    });
+    // useEffect(() => {
+    //     dlm.current = gsap.timeline()
+    //     .fromTo(i(".c-tween"), {scale: 0.7}, {
+    //         scale: 1, repeat: -1, yoyo: true,
+    //       })
+    // });
 
     useEffect(() => {
         tlm.current = gsap.timeline()
