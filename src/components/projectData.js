@@ -1,10 +1,17 @@
 export const ProjectData = [
     {
+        title: "Pipar Beta",
+        description: "Start A Company And Manage Operations Across The Globe Right From Where You Are. Still in beta mode but the Authentication feature works. [DESKTOP MODE ONLY]",
+        img: "https://ik.imagekit.io/onyedika/slide/pipar-beta?ik-sdk-version=javascript-1.4.3&updatedAt=1664831519274",
+        stack: "Angular",
+        link: "https://pipar-beta.vercel.app/"
+    },
+    {
         title: "Pipar",
         description: "A digital web3 platform for tokenizing company shares/stocks. These assets can be fungible or non-fungible",
         img: "https://ik.imagekit.io/onyedika/slide/pipar_peinACEKO.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651255256618",
         stack: "Angular",
-        link: "https://pipar.io/"
+        link: "https://pipar.vercel.app/"
     },
     {
         title: "Company Calender",

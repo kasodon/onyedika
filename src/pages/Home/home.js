@@ -21,30 +21,34 @@ import { ReactComponent as PolygonImg } from './../../assets/images/polygon.svg'
 const Data = [
     {
         id: 0,
-        img: "https://ik.imagekit.io/onyedika/slide/pipar_peinACEKO.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651255256618",
+        img: "https://ik.imagekit.io/onyedika/slide/pipar-beta?ik-sdk-version=javascript-1.4.3&updatedAt=1664831519274",
     },
     {
         id: 1,
-        img: "https://ik.imagekit.io/onyedika/slide/calender_S6GI-SE7_.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651255256123",
+        img: "https://ik.imagekit.io/onyedika/slide/pipar_peinACEKO.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651255256618",
     },
     {
         id: 2,
-        img: "https://ik.imagekit.io/onyedika/slide/movie_Si8QWOouP.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651255256396",
+        img: "https://ik.imagekit.io/onyedika/slide/calender_S6GI-SE7_.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651255256123",
     },
     {
         id: 3,
-        img: "https://ik.imagekit.io/onyedika/slide/natour_QGZwpr7Ta.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651255256510",
+        img: "https://ik.imagekit.io/onyedika/slide/movie_Si8QWOouP.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651255256396",
     },
     {
         id: 4,
-        img: "https://ik.imagekit.io/onyedika/slide/ncehr_GV14iEwWG.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651255256179",
+        img: "https://ik.imagekit.io/onyedika/slide/natour_QGZwpr7Ta.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651255256510",
     },
     {
         id: 5,
-        img: "https://ik.imagekit.io/onyedika/slide/guvve_sUg2If5kc.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651255256276",
+        img: "https://ik.imagekit.io/onyedika/slide/ncehr_GV14iEwWG.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651255256179",
     },
     {
         id: 6,
+        img: "https://ik.imagekit.io/onyedika/slide/guvve_sUg2If5kc.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651255256276",
+    },
+    {
+        id: 7,
         img: "https://ik.imagekit.io/onyedika/slide/web3-forum_2lXPIycqd.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651255256840",
     },
 ];
@@ -119,9 +123,23 @@ function Home() {
        backgroundImage: `url(${image})`
     }
 
+    const hiddenElements = document.querySelectorAll('.hidden');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting){
+                entry.target.classList.add('show');
+            } else {
+                entry.target.classList.remove('show');
+            }
+        })
+    })
+
+    hiddenElements.forEach((el) => observer.observe(el))
+
     return (
         <div className="home">
-            <div className="home-intro">
+            <div className="home-intro hidden">
                 <div className="content">
                 <div className="content-tertiary">
                     <p><span>✌🏻</span> Hi there! I'm Onyedika</p>
@@ -130,7 +148,7 @@ function Home() {
                     <h1>a <span>Frontend Engineer</span>. I help startups <span>launch</span> and <span>grow</span> their products</h1>
                 </div>
                 <div className="content-secondary">
-                    <p>Over 4yrs+ of professional experience working with several programming tools to deliver quality results to clients. I have expert knowledge in FrontEnd engineering, software testing, and web3 development.</p>
+                    <p>I am a software engineer with more than four years of experience. Recognized as a practical and effective developer, experienced in leading cross-functional teams in a time-pressured setting to complete projects on schedule and within budget.</p>
                 </div>
                 </div>
                 
@@ -799,7 +817,7 @@ function Home() {
 </svg>
                 </div>
             </div>
-            <div className="tooling">
+            <div className="tooling hidden">
                 <div className="tooling-title"><h2>Tooling</h2></div>
                 <div className="tooling-box">
                 <div className="box-content">
@@ -844,7 +862,7 @@ function Home() {
                 </div>
                 </div>
             </div>
-            <div className="showroom-section">
+            <div className="showroom-section hidden">
             <div className="showroom-title"><h2>Showroom</h2></div>
             <div className="showroom">
                 <div className="showroom-background" style={Styles}></div>
@@ -854,7 +872,26 @@ function Home() {
             <button class="butt" onClick={nav}>All Project details</button>
             </div>
             </div>
-            <div className="quote">
+            <div className="featured hidden">
+                <div className="featured-title"><h2>Featured</h2></div>
+                <div className="featured-box">
+                    <div className="article">
+                        <div className="top">
+                            <p>Publisher: <span>Hackernoon</span></p>
+                        </div>
+                        <div className="bottom">
+                            <h4>An Intro to Algorithms and Data Structures (Javascript Edition)</h4>
+                            <div className="info">
+                                <p>Sept 15, 2022</p>
+                                <a href='https://hackernoon.com/an-intro-to-algorithms-and-data-structures-javascript-edition'  target='_blank' rel='noreferrer'><svg width="35" height="24" viewBox="0 0 45 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M44.4481 13.7591L31.2866 0.548391C30.9325 0.208882 30.4595 0.0214931 29.969 0.0263367C29.4784 0.0311803 29.0092 0.227871 28.6619 0.574307C28.3145 0.920742 28.1166 1.38939 28.1105 1.87994C28.1043 2.37048 28.2904 2.84394 28.629 3.19897L38.5212 13.1263H1.8772C1.62149 13.1106 1.36528 13.1475 1.12434 13.2346C0.883402 13.3216 0.662838 13.4571 0.476227 13.6326C0.289616 13.8081 0.140908 14.02 0.0392584 14.2552C-0.062391 14.4903 -0.11483 14.7438 -0.11483 15C-0.11483 15.2562 -0.062391 15.5097 0.0392584 15.7448C0.140908 15.98 0.289616 16.1918 0.476227 16.3674C0.662838 16.5429 0.883402 16.6784 1.12434 16.7654C1.36528 16.8525 1.62149 16.8894 1.8772 16.8737H38.6689L28.636 26.794C28.4452 26.9637 28.2909 27.1705 28.1828 27.4018C28.0746 27.6332 28.0147 27.8841 28.0069 28.1394C27.9991 28.3947 28.0434 28.6488 28.1372 28.8864C28.231 29.1239 28.3722 29.3398 28.5523 29.5209C28.7324 29.7019 28.9476 29.8443 29.1846 29.9394C29.4216 30.0344 29.6756 30.0801 29.9309 30.0736C30.1862 30.0671 30.4375 30.0086 30.6694 29.9017C30.9013 29.7947 31.1089 29.6416 31.2796 29.4516L44.4411 16.4167C44.6158 16.2423 44.7544 16.0352 44.849 15.8072C44.9436 15.5792 44.9923 15.3347 44.9923 15.0879C44.9923 14.841 44.9436 14.5966 44.849 14.3686C44.7544 14.1406 44.6158 13.9334 44.4411 13.7591H44.4481Z" fill="white"/>
+</svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="quote hidden">
             <div className="quote-body">
                 <QuoteLeft className="left" />
             <div className="quote-body-content">
