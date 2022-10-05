@@ -1,16 +1,3 @@
-// body {
-//   margin: 0;
-//   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-//     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-//     sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-// }
-
-// code {
-//   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-//     monospace;
-// }
 
 html, body{
   width: 100%;
@@ -97,6 +84,7 @@ body {
 * {
   scrollbar-width: thin;
   scrollbar-color: #14e956;
+  transform: translate3d(0, 0, 0);
 }
 
 /* Works on Chrome, Edge, and Safari */

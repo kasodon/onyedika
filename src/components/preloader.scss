@@ -1,70 +1,96 @@
-.preload {
+.anime {
+    max-width: 100%;
+    width: 100%;
     height: 100vh;
-    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(
-        to right bottom,
-        rgba(#050810, 0.3),
-        rgba(#050810, 0.3)),
-    url('https://ik.imagekit.io/onyedika/spaceX_vLRcnMAE8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1652101535709');
-    background-size: cover;
-    background-position: left center;
-    background-repeat: no-repeat;
-    // padding: 0 2rem;
-    @media (min-width: 480px) and (max-width: 759px) {
-        background-size: contain;
+    .load {
+        width: 70%;
+        animation: fadeInUp 1s ease forwards, fadeOutUp 1s ease forwards 4s;
+        #lo {
+            // animation: fill 0.5s ease forwards 3.5s;
+            #roar {
+                #roar-one {
+                    stroke-dasharray: 785;
+                    stroke-dashoffset: 785;
+                    animation: line-anim 1.5s ease forwards, fill 0.5s ease forwards 3.5s;
+                }
+                #roar-two {
+                    stroke-dasharray: 785;
+                    stroke-dashoffset: 785;
+                    animation: line-anim 1.5s ease forwards 0.2s, fill 0.5s ease forwards 3.5s;
+                }
+                #roar-three {
+                    stroke-dasharray: 785;
+                    stroke-dashoffset: 785;
+                    animation: line-anim 1.5s ease forwards 0.4s, fill 0.5s ease forwards 3.5s;
+                }
+                #roar-four {
+                    stroke-dasharray: 785;
+                    stroke-dashoffset: 785;
+                    animation: line-anim 1.5s ease forwards 0.6s, fill 0.5s ease forwards 3.5s;
+                }
+                #roar-five {
+                    stroke-dasharray: 785;
+                    stroke-dashoffset: 785;
+                    animation: line-anim 1.5s ease forwards 0.8s, fill 0.5s ease forwards 3.5s;
+                }
+                #roar-six {
+                    stroke-dasharray: 785;
+                    stroke-dashoffset: 785;
+                    animation: line-anim 1.5s ease forwards 1s, fill 0.5s ease forwards 3.5s;
+                }
+                #roar-seven {
+                    stroke-dasharray: 785;
+                    stroke-dashoffset: 785;
+                    animation: line-anim 1.5s ease forwards 1.2s, fill 0.5s ease forwards 3.5s;
+                }
+                #roar-eight {
+                    stroke-dasharray: 785;
+                    stroke-dashoffset: 785;
+                    animation: line-anim 1.5s ease forwards 1.2s, fill 0.5s ease forwards 3.5s;
+                }
+            }
+        }
     }
-    @media (max-width: 479px) {
-        background-size: contain;
-    }
-    .log {
-        margin-bottom: 7rem;
-        width: 80vw;
-        height: max-content;
+    .preload {
+        width: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-family: "Cyborg";
-        font-weight: 900;
-        font-size: 3.5rem;
-        line-height: 1.43;
-        color: #14e956; 
+        // animation: fadeInUp 10s ease forwards;
         @media (min-width: 480px) and (max-width: 759px) {
-            font-size: 2.5rem;
-            line-height: 1;
+            background-size: contain;
         }
         @media (max-width: 479px) {
-            font-size: 2rem;
-            line-height: 1;
+            background-size: contain;
         }
-        .square {
+        .loader {
+            width: 70vw !important;
         }
-    }
-    .loader {
-        width: 80vw !important;
-    }
-    .progress {
-        width: 80vw !important;
-        color: #14e956 !important;
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
+        .progress {
+            width: 70vw !important;
+            color: #14e956 !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+        }
     }
 }
 
 
 .css-eglki6-MuiLinearProgress-root {
-    height: 20px !important;
+    height: 5px !important;
     background-color: #e8fdee !important;
     border-radius: 5px !important;
     @media (min-width: 480px) and (max-width: 759px) {
-        height: 14px !important;
+        height: 5px !important;
     }
     @media (max-width: 479px) {
-        height: 12px !important;
+        height: 5px !important;
     }
 }
 
@@ -74,30 +100,29 @@
 
 .css-1kjyx0o-MuiTypography-root {
     margin-top: 2rem !important;
-    // font-family: "Cyborg" !important;
     font-family: "ExoSpace" !important;
     font-weight: 900 !important;
-    font-size: 3rem !important;
+    font-size: 2rem !important;
     line-height: 1.43;
     @media (min-width: 480px) and (max-width: 759px) {
-        font-size: 2.5rem !important;
+        font-size: 1.5rem !important;
         line-height: 1.15 !important;
     }
     @media (max-width: 479px) {
-        font-size: 2rem !important;
+        font-size: 1.5rem !important;
         line-height: 1 !important;
     }
 }
 
 .css-7p5u54 {
-    height: 20px !important;
+    height: 5px !important;
     background-color: #e8fdee !important;
     border-radius: 5px !important;
     @media (min-width: 480px) and (max-width: 759px) {
-        height: 14px !important;
+        height: 5px !important;
     }
     @media (max-width: 479px) {
-        height: 12px !important;
+        height: 5px !important;
     }
 }
 
@@ -110,14 +135,53 @@
     // font-family: "Cyborg" !important;
     font-family: "ExoSpace" !important;
     font-weight: 900 !important;
-    font-size: 3rem !important;
+    font-size: 2rem !important;
     line-height: 1.43;
     @media (min-width: 480px) and (max-width: 759px) {
-        font-size: 2.5rem !important;
+        font-size: 1.5rem !important;
         line-height: 1.15 !important;
     }
     @media (max-width: 479px) {
-        font-size: 2rem !important;
+        font-size: 1.5rem !important;
         line-height: 1 !important;
     }
 }
+
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: #14e956;
+    }
+}
+
+@keyframes fadeOutUp {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }

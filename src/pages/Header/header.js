@@ -4,6 +4,7 @@ import { gsap } from "gsap";
 import { CustomEase } from "gsap/CustomEase";
 import { Outlet, Link, NavLink } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
+import logo from '../../assets/images/logo.svg';
 import './header.style.js';
 import './header.scss';
 
@@ -84,18 +85,15 @@ function Header() {
     return (
         <div className="header">
             <div className="logo" onClick={nav}>
-            <svg ref={el} viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="path-1-inside-1_4_24" fill="white">
-<rect x="0.189087" y="0.689423" width="65.6696" height="65.6696" rx="3"/>
-</mask>
-<rect x="0.189087" y="0.689423" width="65.6696" height="65.6696" rx="3" stroke="#14E956" stroke-width="17.1461" mask="url(#path-1-inside-1_4_24)"/>
-<rect className="square" x="33" y="34" width="14.4256" height="14.4256" rx="1.57801" fill="#14E956"/>
-</svg>
+            <object data={logo} type="image/svg+xml" title="Logo" alt="Logo">
+        <p>No SVG support, here's a substitute</p>
+        <img src={logo} alt="Logo" />
+      </object>
             </div>
 
             <div className="menu-toggle">
             <input type="checkbox" className="nav__checkbox" id="nav-toggle" checked={checked} onChange={e => setChecked(e.target.checked)} />
-            <label htmlFor="nav-toggle" className="nav__button" onClick={triggerAnime}>
+            <label htmlFor="nav-toggle" className="nav__button">
                 <span className="nav__icon">&nbsp;</span>
             </label>
             <div className="navigation" ref={elSocials}>
@@ -141,8 +139,8 @@ function Header() {
                     <ul>
                         <li className="menu-one"><NavLink className="nav-link" onClick={check} to="/">Home</NavLink></li>
                         <li className="menu-two"><NavLink className="nav-link" onClick={check} to="/work">Work</NavLink></li>
-                        <li className="menu-three"><a className="nav-link" href="https://webwonders.hashnode.dev/" target="_blank">Writing</a></li>
-                        <li className="menu-four"><a className="nav-link" href="https://drive.google.com/file/d/1X69Hfo7Ei5p3nlC130T1ieKG-3OVaRUt/view?usp=sharing" target="_blank">Resume</a></li>
+                        <li className="menu-three"><a className="nav-link" href="https://hackernoon.com/u/onyedika" target="_blank">Writing</a></li>
+                        <li className="menu-four"><a className="nav-link" href="https://drive.google.com/file/d/1mvp127VmxH5b68onmg0gKmxF6DZTIPUE/view?usp=sharing" target="_blank">Resume</a></li>
                         <li className="menu-five"><a className="nav-link" href="mailto:edeworonyedika@gmail.com" target="_blank">Contact</a></li>
                     </ul>
                     </div>    
