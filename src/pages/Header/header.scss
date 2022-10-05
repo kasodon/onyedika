@@ -146,6 +146,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            animation: wobble 1s ease forwards 10s;
+            animation-iteration-count: 3;
             @media (min-width: 1025px) and (max-width: 1300px){
                 width: 50px;
                 height: 38px;
@@ -880,5 +882,35 @@
   
     100% {
       opacity: 1;
+    }
+  }
+
+  @keyframes wobble {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+  
+    15% {
+      transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+  
+    30% {
+      transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    }
+  
+    45% {
+      transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+  
+    60% {
+      transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    }
+  
+    75% {
+      transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
     }
   }
