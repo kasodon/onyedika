@@ -1,5 +1,12 @@
 export const ProjectData = [
     {
+        title: "PhoneBook App",
+        description: "Manage your phone contacts the easy way. create, update and delete your personal contacts all from one app. Find source code on my github",
+        img: "https://ik.imagekit.io/onyedika/phoneapp_oXM1Z9FA_.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667104369642",
+        stack: "React",
+        link: "https://phone-rosy.vercel.app/"
+    },
+    {
         title: "Pipar Beta",
         description: "Start A Company And Manage Operations Across The Globe Right From Where You Are. Still in beta mode but the Authentication feature works. [DESKTOP MODE ONLY]",
         img: "https://ik.imagekit.io/onyedika/slide/pipar-beta?ik-sdk-version=javascript-1.4.3&updatedAt=1664831519274",
