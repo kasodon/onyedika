@@ -1,7 +1,7 @@
 export const ProjectData = [
     {
         title: "PhoneBook App",
-        description: "Manage your phone contacts the easy way. create, update and delete your personal contacts all from one app. Find source code on my github",
+        description: "Manage your phone contacts the easy way. create, update and delete your personal contacts all from one app. This is a MERN stack app with react redux toolkit. Find source code on my github",
         img: "https://ik.imagekit.io/onyedika/phoneapp_oXM1Z9FA_.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667104369642",
         stack: "React",
         link: "https://phone-rosy.vercel.app/"
